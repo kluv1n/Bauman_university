@@ -1,19 +1,23 @@
-cmake_minimum_required(VERSION 3.0)
-project(GTKTutorial)
+cmake_minimum_required(VERSION 3.10)
 
-set(CMAKE_C_STANDARD 11)
-set(CMAKE_CXX_STANDARD 17)
+# Название проекта
+project(MyGtkApp)
 
-set(GTK3_INCLUDE_DIRS "C:/msys64/mingw64/include/")
-set(GTK3_LIBRARY_DIRS "C:/msys64/mingw64/lib")
-set(ENV{PKG_CONFIG_PATH} "C:/msys64/mingw64/lib/pkgconfig")
+# Установка стандарта C++
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Поиск библиотек GTK
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(GTK4 REQUIRED gtk4)
+pkg_check_modules(GTK REQUIRED gtk+-3.0)
 
-include_directories(${GTK4_INCLUDE_DIRS})
-link_directories(${GTK4_LIBRARY_DIRS})
-add_definitions(${GTK4_CFLAGS_OTHER})
+# Установка флагов компилятора и линкера
+include_directories(${GTK_INCLUDE_DIRS})
+link_directories(${GTK_LIBRARY_DIRS})
+add_definitions(${GTK_CFLAGS_OTHER})
 
-add_executable(TutorialApp main.cpp)
-target_link_libraries(TutorialApp ${GTK4_LIBRARIES})
+# Добавление исходных файлов
+add_executable(BaumanUniversity2 src/main.cpp src/main_window.cpp)
+
+# Линковка с библиотеками GTK
+target_link_libraries(BaumanUniversity2 ${GTK_LIBRARIES})

@@ -1,8 +1,0 @@
-[
-{
-  "directory": "D:/Bauman_poject/Bauman_university-2/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DLIBDEFLATE_DLL @CMakeFiles/TutorialApp.dir/includes_CXX.rsp -g -std=gnu++17   -mfpmath=sse -msse -msse2 -o CMakeFiles\\TutorialApp.dir\\main.cpp.obj -c D:\\Bauman_poject\\Bauman_university-2\\main.cpp",
-  "file": "D:/Bauman_poject/Bauman_university-2/main.cpp",
-  "output": "CMakeFiles/TutorialApp.dir/main.cpp.obj"
-}
-]
