@@ -1,0 +1,3 @@
+D:/Bauman_poject/Bauman_university-2/build/CMakeFiles/TutorialApp.dir
+D:/Bauman_poject/Bauman_university-2/build/CMakeFiles/edit_cache.dir
+D:/Bauman_poject/Bauman_university-2/build/CMakeFiles/rebuild_cache.dir
