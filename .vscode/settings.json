@@ -1,3 +1,13 @@
 {
-    "cmake.sourceDirectory": "D:/Bauman_poject/Bauman_university-2"
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "C:/msys64/mingw64/include",
+        "C:/msys64/mingw64/include/gtk-3.0",
+        "C:/msys64/mingw64/include/glib-2.0",
+        "C:/msys64/mingw64/lib/glib-2.0/include"
+    ],
+    
+    "cmake.sourceDirectory": "D:/Bauman_poject/Bauman_university-3",
+    "cmake.generator": "MinGW Makefiles"
+
 }

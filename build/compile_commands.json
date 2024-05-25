@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/Bauman_poject/Bauman_university-3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DLIBDEFLATE_DLL @CMakeFiles/BaumanUniversity3.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\BaumanUniversity3.dir\\src\\main.cpp.obj -c D:\\Bauman_poject\\Bauman_university-3\\src\\main.cpp",
+  "file": "D:/Bauman_poject/Bauman_university-3/src/main.cpp",
+  "output": "CMakeFiles/BaumanUniversity3.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/Bauman_poject/Bauman_university-3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DLIBDEFLATE_DLL @CMakeFiles/BaumanUniversity3.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\BaumanUniversity3.dir\\src\\main_window.cpp.obj -c D:\\Bauman_poject\\Bauman_university-3\\src\\main_window.cpp",
+  "file": "D:/Bauman_poject/Bauman_university-3/src/main_window.cpp",
+  "output": "CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj"
+}
+]

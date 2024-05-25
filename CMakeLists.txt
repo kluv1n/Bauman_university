@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Название проекта
-project(MyGtkApp)
+project(BaumanUniversity3)
 
 # Установка стандарта C++
 set(CMAKE_CXX_STANDARD 11)
@@ -17,7 +17,7 @@ link_directories(${GTK_LIBRARY_DIRS})
 add_definitions(${GTK_CFLAGS_OTHER})
 
 # Добавление исходных файлов
-add_executable(BaumanUniversity2 src/main.cpp src/main_window.cpp)
+add_executable(BaumanUniversity3 src/main.cpp src/main_window.cpp)
 
 # Линковка с библиотеками GTK
-target_link_libraries(BaumanUniversity2 ${GTK_LIBRARIES})
+target_link_libraries(BaumanUniversity3 ${GTK_LIBRARIES})
