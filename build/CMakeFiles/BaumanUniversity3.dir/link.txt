@@ -1,3 +1,0 @@
-D:\bin\cmake.exe -E rm -f CMakeFiles\BaumanUniversity3.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\BaumanUniversity3.dir/objects.a @CMakeFiles\BaumanUniversity3.dir\objects1.rsp
-C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\BaumanUniversity3.dir/objects.a -Wl,--no-whole-archive -o BaumanUniversity3.exe -Wl,--out-implib,libBaumanUniversity3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BaumanUniversity3.dir\linkLibs.rsp

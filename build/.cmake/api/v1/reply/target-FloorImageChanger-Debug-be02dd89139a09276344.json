@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "BaumanUniversity3.exe"
+			"path" : "FloorImageChanger.exe"
 		},
 		{
-			"path" : "BaumanUniversity3.pdb"
+			"path" : "FloorImageChanger.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -15,7 +15,6 @@
 		[
 			"add_executable",
 			"target_link_libraries",
-			"add_definitions",
 			"include_directories"
 		],
 		"files" : 
@@ -30,25 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 20,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 23,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 17,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 15,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -62,65 +55,58 @@
 					"fragment" : "-g -std=gnu++11"
 				}
 			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 3,
-					"define" : "LIBDEFLATE_DLL"
-				}
-			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/gtk-3.0"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/pango-1.0"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/harfbuzz"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/cairo"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/freetype2"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/pixman-1"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/libpng16"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/webp"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/atk-1.0"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/fribidi"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../include/glib-2.0"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"path" : "C:/msys64/mingw64/bin/../lib/glib-2.0/include"
 				}
 			],
@@ -135,12 +121,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "BaumanUniversity3::@6890427a1f51a3e7e1df",
+	"id" : "FloorImageChanger::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -300,8 +285,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "BaumanUniversity3",
-	"nameOnDisk" : "BaumanUniversity3.exe",
+	"name" : "FloorImageChanger",
+	"nameOnDisk" : "FloorImageChanger.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -313,8 +298,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -323,13 +307,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/main_window.cpp",
+			"path" : "main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

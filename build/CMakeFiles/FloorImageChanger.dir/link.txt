@@ -1,0 +1,3 @@
+D:\bin\cmake.exe -E rm -f CMakeFiles\FloorImageChanger.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\FloorImageChanger.dir/objects.a @CMakeFiles\FloorImageChanger.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\FloorImageChanger.dir/objects.a -Wl,--no-whole-archive -o FloorImageChanger.exe -Wl,--out-implib,libFloorImageChanger.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FloorImageChanger.dir\linkLibs.rsp

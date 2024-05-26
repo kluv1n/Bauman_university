@@ -1,6 +1,5 @@
-CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj: \
- D:\Bauman_poject\Bauman_university-3\src\main_window.cpp \
- D:\Bauman_poject\Bauman_university-3\src\main_window.h \
+CMakeFiles/FloorImageChanger.dir/main.cpp.obj: \
+ D:\Bauman_poject\Bauman_university-4\main.cpp \
  C:/msys64/mingw64/include/gtk-3.0/gtk/gtk.h \
  C:/msys64/mingw64/include/gtk-3.0/gdk/gdk.h \
  C:/msys64/mingw64/include/gtk-3.0/gdk/gdkconfig.h \
@@ -714,53 +713,32 @@ CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj: \
  C:/msys64/mingw64/include/gtk-3.0/gtk/deprecated/gtkvscrollbar.h \
  C:/msys64/mingw64/include/gtk-3.0/gtk/deprecated/gtkvseparator.h \
  C:/msys64/mingw64/include/gtk-3.0/gtk/gtk-autocleanups.h \
- C:/msys64/mingw64/include/c++/13.2.0/iostream \
+ C:/msys64/mingw64/include/c++/13.2.0/string \
  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
- C:/msys64/mingw64/include/c++/13.2.0/ostream \
- C:/msys64/mingw64/include/c++/13.2.0/ios \
- C:/msys64/mingw64/include/c++/13.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/memoryfwd.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/postypes.h \
  C:/msys64/mingw64/include/c++/13.2.0/cwchar \
  C:/msys64/mingw64/include/wchar.h \
  C:/msys64/mingw64/include/_mingw_stat64.h \
  C:/msys64/mingw64/include/sec_api/wchar_s.h \
- C:/msys64/mingw64/include/c++/13.2.0/exception \
- C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
- C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
- C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/allocator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/new_allocator.h \
  C:/msys64/mingw64/include/c++/13.2.0/new \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/move.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/localefwd.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/mingw64/include/c++/13.2.0/clocale \
  C:/msys64/mingw64/include/locale.h \
+ C:/msys64/mingw64/include/c++/13.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/13.2.0/cctype \
  C:/msys64/mingw64/include/ctype.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/ios_base.h \
- C:/msys64/mingw64/include/c++/13.2.0/ext/atomicity.h \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
- C:/msys64/mingw64/include/pthread.h \
- C:/msys64/mingw64/include/sys/types.h \
- C:/msys64/mingw64/include/process.h \
- C:/msys64/mingw64/include/corecrt_startup.h \
- C:/msys64/mingw64/include/pthread_compat.h \
- C:/msys64/mingw64/include/pthread_unistd.h \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/locale_classes.h \
- C:/msys64/mingw64/include/c++/13.2.0/string \
- C:/msys64/mingw64/include/c++/13.2.0/bits/allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/new_allocator.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream_insert.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h \
@@ -791,7 +769,36 @@ CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/cerrno \
  C:/msys64/mingw64/include/c++/13.2.0/bits/charconv.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
+ C:/msys64/mingw64/include/c++/13.2.0/map \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_map.h \
+ C:/msys64/mingw64/include/c++/13.2.0/tuple \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_multimap.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/erase_if.h \
+ C:/msys64/mingw64/include/c++/13.2.0/iostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ostream \
+ C:/msys64/mingw64/include/c++/13.2.0/ios \
+ C:/msys64/mingw64/include/c++/13.2.0/exception \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
+ C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/ios_base.h \
+ C:/msys64/mingw64/include/c++/13.2.0/ext/atomicity.h \
+ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h \
+ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+ C:/msys64/mingw64/include/pthread.h \
+ C:/msys64/mingw64/include/sys/types.h \
+ C:/msys64/mingw64/include/process.h \
+ C:/msys64/mingw64/include/corecrt_startup.h \
+ C:/msys64/mingw64/include/pthread_compat.h \
+ C:/msys64/mingw64/include/pthread_unistd.h \
+ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/locale_classes.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/locale_classes.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/system_error \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/error_constants.h \
@@ -809,4 +816,9 @@ CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_ios.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/13.2.0/istream \
- C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc
+ C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
+ C:/msys64/mingw64/include/c++/13.2.0/fstream \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h \
+ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/fstream.tcc

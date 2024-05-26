@@ -56,10 +56,10 @@ RM = D:\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Bauman_poject\Bauman_university-3
+CMAKE_SOURCE_DIR = D:\Bauman_poject\Bauman_university-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Bauman_poject\Bauman_university-3\build
+CMAKE_BINARY_DIR = D:\Bauman_poject\Bauman_university-4\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-3\build\CMakeFiles D:\Bauman_poject\Bauman_university-3\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-4\build\CMakeFiles D:\Bauman_poject\Bauman_university-4\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-3\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-4\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,65 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BaumanUniversity3
+# Target rules for targets named FloorImageChanger
 
 # Build rule for target.
-BaumanUniversity3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 BaumanUniversity3
-.PHONY : BaumanUniversity3
+FloorImageChanger: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FloorImageChanger
+.PHONY : FloorImageChanger
 
 # fast build rule for target.
-BaumanUniversity3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/build
-.PHONY : BaumanUniversity3/fast
+FloorImageChanger/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/build
+.PHONY : FloorImageChanger/fast
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
-
-# target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/main_window.obj: src/main_window.cpp.obj
-.PHONY : src/main_window.obj
+main.obj: main.cpp.obj
+.PHONY : main.obj
 
 # target to build an object file
-src/main_window.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj
-.PHONY : src/main_window.cpp.obj
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-src/main_window.i: src/main_window.cpp.i
-.PHONY : src/main_window.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/main_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.i
-.PHONY : src/main_window.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/main_window.s: src/main_window.cpp.s
-.PHONY : src/main_window.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/main_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.s
-.PHONY : src/main_window.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -184,13 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... BaumanUniversity3
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
-	@echo ... src/main_window.obj
-	@echo ... src/main_window.i
-	@echo ... src/main_window.s
+	@echo ... FloorImageChanger
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

@@ -53,16 +53,16 @@ RM = D:\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Bauman_poject\Bauman_university-3
+CMAKE_SOURCE_DIR = D:\Bauman_poject\Bauman_university-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Bauman_poject\Bauman_university-3\build
+CMAKE_BINARY_DIR = D:\Bauman_poject\Bauman_university-4\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/BaumanUniversity3.dir/all
+all: CMakeFiles/FloorImageChanger.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/BaumanUniversity3.dir/clean
+clean: CMakeFiles/FloorImageChanger.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BaumanUniversity3.dir
+# Target rules for target CMakeFiles/FloorImageChanger.dir
 
 # All Build rule for target.
-CMakeFiles/BaumanUniversity3.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Bauman_poject\Bauman_university-3\build\CMakeFiles --progress-num=1,2,3 "Built target BaumanUniversity3"
-.PHONY : CMakeFiles/BaumanUniversity3.dir/all
+CMakeFiles/FloorImageChanger.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Bauman_poject\Bauman_university-4\build\CMakeFiles --progress-num=1,2 "Built target FloorImageChanger"
+.PHONY : CMakeFiles/FloorImageChanger.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/BaumanUniversity3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-3\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/BaumanUniversity3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-3\build\CMakeFiles 0
-.PHONY : CMakeFiles/BaumanUniversity3.dir/rule
+CMakeFiles/FloorImageChanger.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-4\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/FloorImageChanger.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-4\build\CMakeFiles 0
+.PHONY : CMakeFiles/FloorImageChanger.dir/rule
 
 # Convenience name for target.
-BaumanUniversity3: CMakeFiles/BaumanUniversity3.dir/rule
-.PHONY : BaumanUniversity3
+FloorImageChanger: CMakeFiles/FloorImageChanger.dir/rule
+.PHONY : FloorImageChanger
 
 # clean rule for target.
-CMakeFiles/BaumanUniversity3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BaumanUniversity3.dir\build.make CMakeFiles/BaumanUniversity3.dir/clean
-.PHONY : CMakeFiles/BaumanUniversity3.dir/clean
+CMakeFiles/FloorImageChanger.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/clean
+.PHONY : CMakeFiles/FloorImageChanger.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

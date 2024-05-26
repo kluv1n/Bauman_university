@@ -1,6 +1,8 @@
 #include <gtk/gtk.h>
 #include <string>
 #include <map>
+#include <iostream>
+#include <fstream>
 
 // Глобальные переменные для хранения введенного текста
 std::string text1;
@@ -42,6 +44,12 @@ void on_button_clicked(GtkButton *button, gpointer data) {
     }
 }
 
+// Функция для проверки существования файла
+bool file_exists(const std::string& filename) {
+    std::ifstream file(filename);
+    return file.good();
+}
+
 int main(int argc, char *argv[]) {
     GtkBuilder *builder;
     GtkWidget *window;
@@ -49,8 +57,16 @@ int main(int argc, char *argv[]) {
 
     gtk_init(&argc, &argv);
 
+    // Устанавливаем путь к файлу Glade
+    std::string glade_file = "../interface.glade";
+
+    if (!file_exists(glade_file)) {
+        std::cerr << "Error: File " << glade_file << " not found." << std::endl;
+        return 1;
+    }
+
     // Загружаем интерфейс из файла Glade
-    builder = gtk_builder_new_from_file("interface.glade");
+    builder = gtk_builder_new_from_file(glade_file.c_str());
 
     // Получаем основное окно
     window = GTK_WIDGET(gtk_builder_get_object(builder, "main_window"));

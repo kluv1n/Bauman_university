@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Bauman_poject/Bauman_university-3/src/main.cpp" "CMakeFiles/BaumanUniversity3.dir/src/main.cpp.obj" "gcc" "CMakeFiles/BaumanUniversity3.dir/src/main.cpp.obj.d"
-  "D:/Bauman_poject/Bauman_university-3/src/main_window.cpp" "CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj" "gcc" "CMakeFiles/BaumanUniversity3.dir/src/main_window.cpp.obj.d"
+  "D:/Bauman_poject/Bauman_university-4/main.cpp" "CMakeFiles/FloorImageChanger.dir/main.cpp.obj" "gcc" "CMakeFiles/FloorImageChanger.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
