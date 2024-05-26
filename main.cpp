@@ -48,12 +48,25 @@ void on_entry2_activate(GtkEntry *entry, gpointer data) {
 // Обработчик для кнопок
 void on_button_clicked(GtkButton *button, gpointer data) {
     AppWidgets *widgets = static_cast<AppWidgets*>(data);
-    const gchar *button_name = gtk_widget_get_name(GTK_WIDGET(button));
-
-    // Определяем, какая кнопка была нажата и меняем изображение
-    auto it = widgets->floor_images.find(button_name);
-    if (it != widgets->floor_images.end()) {
-        gtk_image_set_from_file(GTK_IMAGE(widgets->floor_image), it->second.c_str());
+    
+    // Получаем ID кнопки
+    const gchar *button_id = gtk_buildable_get_name(GTK_BUILDABLE(button));
+    
+    // Проверяем, что ID кнопки не равен NULL
+    if (button_id != NULL) {
+        //g_print("Button clicked: %s\n", button_id);
+        
+        // Ищем изображение для данного ID в std::map
+        auto it = widgets->floor_images.find(button_id);
+        
+        // Если нашли, устанавливаем изображение
+        if (it != widgets->floor_images.end()) {
+            gtk_image_set_from_file(GTK_IMAGE(widgets->floor_image), it->second.c_str());
+        } else {
+            g_print("Image not found for button: %s\n", button_id);
+        }
+    } else {
+        g_print("Button ID is NULL\n");
     }
 }
 
@@ -132,17 +145,17 @@ int main(int argc, char *argv[]) {
 
     // Заполняем карту соответствиями между кнопками и изображениями
     widgets.floor_images = {
-        {"button1", "floor1.PNG"},
-        {"button2", "floor2.PNG"},
-        {"button3", "floor3.PNG"},
-        {"button4", "floor4.PNG"},
-        {"button5", "floor5.PNG"},
-        {"button6", "floor6.PNG"},
-        {"button7", "floor7.PNG"},
-        {"button8", "floor8.PNG"},
-        {"button9", "floor9.PNG"},
-        {"button10", "floor10.PNG"},
-        {"button11", "floor11.PNG"}
+        {"button1", "../floor1.PNG"},
+        {"button2", "../floor2.PNG"},
+        {"button3", "../floor3.PNG"},
+        {"button4", "../floor4.PNG"},
+        {"button5", "../floor5.PNG"},
+        {"button6", "../floor6.PNG"},
+        {"button7", "../floor7.PNG"},
+        {"button8", "../floor8.PNG"},
+        {"button9", "../floor9.PNG"},
+        {"button10", "../floor10.PNG"},
+        {"button11", "../floor11.PNG"}
     };
 
     // Подключаем обработчики сигналов для кнопок
