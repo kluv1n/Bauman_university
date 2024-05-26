@@ -13,6 +13,19 @@ struct AppWidgets {
     GtkWidget *floor_image;
     GtkWidget *entry1;
     GtkWidget *entry2;
+    //GtkWidget *dialog1;
+    GtkWidget *dialog_vbox1;
+    GtkWidget *vpaned1;
+    GtkWidget *hpaned1;
+    GtkWidget *vpaned2;
+    GtkWidget *vpaned3;
+    GtkWidget *vpaned4;
+    GtkWidget *vpaned5;
+    GtkWidget *label1;
+    GtkWidget *label2;
+    GtkWidget *label3;
+    GtkWidget *menubar1;
+    GtkWidget *dialog_action_area1;
     std::map<std::string, std::string> floor_images;
 };
 
@@ -76,19 +89,60 @@ int main(int argc, char *argv[]) {
     widgets.entry1 = GTK_WIDGET(gtk_builder_get_object(builder, "entry1"));
     widgets.entry2 = GTK_WIDGET(gtk_builder_get_object(builder, "entry2"));
 
+    // Получаем дополнительные виджеты
+    //widgets.dialog1 = GTK_WIDGET(gtk_builder_get_object(builder, "dialog1"));
+    widgets.dialog_vbox1 = GTK_WIDGET(gtk_builder_get_object(builder, "dialog-vbox1"));
+    widgets.vpaned1 = GTK_WIDGET(gtk_builder_get_object(builder, "vpaned1"));
+    widgets.hpaned1 = GTK_WIDGET(gtk_builder_get_object(builder, "hpaned1"));
+    widgets.vpaned2 = GTK_WIDGET(gtk_builder_get_object(builder, "vpaned2"));
+    widgets.vpaned3 = GTK_WIDGET(gtk_builder_get_object(builder, "vpaned3"));
+    widgets.vpaned4 = GTK_WIDGET(gtk_builder_get_object(builder, "vpaned4"));
+    widgets.vpaned5 = GTK_WIDGET(gtk_builder_get_object(builder, "vpaned5"));
+    widgets.label1 = GTK_WIDGET(gtk_builder_get_object(builder, "label1"));
+    widgets.label2 = GTK_WIDGET(gtk_builder_get_object(builder, "label2"));
+    widgets.label3 = GTK_WIDGET(gtk_builder_get_object(builder, "label3"));
+    widgets.menubar1 = GTK_WIDGET(gtk_builder_get_object(builder, "menubar1"));
+    widgets.dialog_action_area1 = GTK_WIDGET(gtk_builder_get_object(builder, "dialog-action_area1"));
+
+    // Проверяем, что все виджеты были успешно получены
+    if (!widgets.floor_image || !widgets.entry1 || !widgets.entry2 || 
+        !widgets.dialog_vbox1 || !widgets.vpaned1 || !widgets.hpaned1 ||
+        !widgets.vpaned2 || !widgets.vpaned3 || !widgets.vpaned4 || !widgets.vpaned5 ||
+        !widgets.label1 || !widgets.label2 || !widgets.label3 || !widgets.menubar1 ||
+        !widgets.dialog_action_area1) {
+        std::cerr << "Error: Not all widgets could be found in the interface file." << std::endl;
+        if (!widgets.floor_image) std::cerr << "Missing: floor_image" << std::endl;
+        if (!widgets.entry1) std::cerr << "Missing: entry1" << std::endl;
+        if (!widgets.entry2) std::cerr << "Missing: entry2" << std::endl;
+        //if (!widgets.dialog1) std::cerr << "Missing: dialog1" << std::endl;
+        if (!widgets.dialog_vbox1) std::cerr << "Missing: dialog-vbox1" << std::endl;
+        if (!widgets.vpaned1) std::cerr << "Missing: vpaned1" << std::endl;
+        if (!widgets.hpaned1) std::cerr << "Missing: hpaned1" << std::endl;
+        if (!widgets.vpaned2) std::cerr << "Missing: vpaned2" << std::endl;
+        if (!widgets.vpaned3) std::cerr << "Missing: vpaned3" << std::endl;
+        if (!widgets.vpaned4) std::cerr << "Missing: vpaned4" << std::endl;
+        if (!widgets.vpaned5) std::cerr << "Missing: vpaned5" << std::endl;
+        if (!widgets.label1) std::cerr << "Missing: label1" << std::endl;
+        if (!widgets.label2) std::cerr << "Missing: label2" << std::endl;
+        if (!widgets.label3) std::cerr << "Missing: label3" << std::endl;
+        if (!widgets.menubar1) std::cerr << "Missing: menubar1" << std::endl;
+        if (!widgets.dialog_action_area1) std::cerr << "Missing: dialog-action_area1" << std::endl;
+        return 1;
+    }
+
     // Заполняем карту соответствиями между кнопками и изображениями
     widgets.floor_images = {
-        {"button1", "floor1.png"},
-        {"button2", "floor2.png"},
-        {"button3", "floor3.png"},
-        {"button4", "floor4.png"},
-        {"button5", "floor5.png"},
-        {"button6", "floor6.png"},
-        {"button7", "floor7.png"},
-        {"button8", "floor8.png"},
-        {"button9", "floor9.png"},
-        {"button10", "floor10.png"},
-        {"button11", "floor11.png"}
+        {"button1", "floor1.PNG"},
+        {"button2", "floor2.PNG"},
+        {"button3", "floor3.PNG"},
+        {"button4", "floor4.PNG"},
+        {"button5", "floor5.PNG"},
+        {"button6", "floor6.PNG"},
+        {"button7", "floor7.PNG"},
+        {"button8", "floor8.PNG"},
+        {"button9", "floor9.PNG"},
+        {"button10", "floor10.PNG"},
+        {"button11", "floor11.PNG"}
     };
 
     // Подключаем обработчики сигналов для кнопок
