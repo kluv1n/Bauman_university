@@ -1,4 +1,5 @@
 #include <gtk/gtk.h>
+#include "Point/Point.h"
 #include <string>
 #include <map>
 #include <iostream>

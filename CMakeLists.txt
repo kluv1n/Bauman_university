@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Добавляем исполняемый файл
 add_executable(FloorImageChanger main.cpp)
-
+add_subdirectory(Point)
 # Находим пакеты GTK и их компоненты
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTK REQUIRED gtk+-3.0)
