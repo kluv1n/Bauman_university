@@ -1,5 +1,6 @@
 #include <gtk/gtk.h>
 #include "Point/Point.h"
+#include "creationDB.cpp"
 #include <string>
 #include <map>
 #include <iostream>
@@ -174,6 +175,11 @@ int main(int argc, char *argv[]) {
     gtk_widget_show_all(window);
 
     gtk_main();
+
+
+    // printShortestPath(defRoom(text1), defRoom(text2));
+
+    // creationDB();
 
     return 0;
 }
