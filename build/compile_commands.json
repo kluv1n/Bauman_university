@@ -1,6 +1,6 @@
 [
 {
-  "directory": "D:/Bauman_poject/Bauman_university-4/build",
+  "directory": "D:/Bauman_poject/Bauman_university-6/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/FloorImageChanger.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\FloorImageChanger.dir\\main.cpp.obj -c D:\\Bauman_poject\\Bauman_university-4\\main.cpp",
   "file": "D:/Bauman_poject/Bauman_university-4/main.cpp",
   "output": "CMakeFiles/FloorImageChanger.dir/main.cpp.obj"

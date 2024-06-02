@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "D:/Bauman_poject/Bauman_university-4")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "D:/Bauman_poject/Bauman_university-4/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "D:/Bauman_poject/Bauman_university-6/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

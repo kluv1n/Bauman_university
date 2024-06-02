@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = D:\Bauman_poject\Bauman_university-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Bauman_poject\Bauman_university-4\build
+CMAKE_BINARY_DIR = D:\Bauman_poject\Bauman_university-6\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/FloorImageChanger.dir/clean
 CMakeFiles/FloorImageChanger.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FloorImageChanger.dir\build.make CMakeFiles/FloorImageChanger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Bauman_poject\Bauman_university-4\build\CMakeFiles --progress-num=1,2 "Built target FloorImageChanger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Bauman_poject\Bauman_university-6\build\CMakeFiles --progress-num=1,2 "Built target FloorImageChanger"
 .PHONY : CMakeFiles/FloorImageChanger.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FloorImageChanger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-4\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-6\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/FloorImageChanger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-4\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Bauman_poject\Bauman_university-6\build\CMakeFiles 0
 .PHONY : CMakeFiles/FloorImageChanger.dir/rule
 
 # Convenience name for target.

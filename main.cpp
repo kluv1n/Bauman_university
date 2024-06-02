@@ -146,17 +146,17 @@ int main(int argc, char *argv[]) {
 
     // Заполняем карту соответствиями между кнопками и изображениями
     widgets.floor_images = {
-        {"button1", "../floor1.PNG"},
-        {"button2", "../floor2.PNG"},
-        {"button3", "../floor3.PNG"},
-        {"button4", "../floor4.PNG"},
-        {"button5", "../floor5.PNG"},
-        {"button6", "../floor6.PNG"},
-        {"button7", "../floor7.PNG"},
-        {"button8", "../floor8.PNG"},
-        {"button9", "../floor9.PNG"},
-        {"button10", "../floor10.PNG"},
-        {"button11", "../floor11.PNG"}
+        {"button1", "../floor/floor1.PNG"},
+        {"button2", "../floor/floor2.PNG"},
+        {"button3", "../floor/floor3.PNG"},
+        {"button4", "../floor/floor4.PNG"},
+        {"button5", "../floor/floor5.PNG"},
+        {"button6", "../floor/floor6.PNG"},
+        {"button7", "../floor/floor7.PNG"},
+        {"button8", "../floor/floor8.PNG"},
+        {"button9", "../floor/floor9.PNG"},
+        {"button10", "../floor/floor10.PNG"},
+        {"button11", "../floor/floor11.PNG"}
     };
 
     // Подключаем обработчики сигналов для кнопок
