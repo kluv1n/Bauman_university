@@ -45,6 +45,7 @@ void on_entry2_activate(GtkEntry *entry, gpointer data) {
     const gchar *text = gtk_entry_get_text(entry);
     text2 = text;
     g_print("Text2: %s\n", text2.c_str());
+    printShortestPath(defRoom(text1), defRoom(text2));
 }
 
 // Обработчик для кнопок
@@ -79,6 +80,68 @@ bool file_exists(const std::string& filename) {
 }
 
 int main(int argc, char *argv[]) {
+    int loc5[3] = {5, 0, 0};
+    Point obj1('a', "Южный коридор 5эт", loc5, {});
+    Point obj2('a', "Главный коридор 5эт", loc5, {});
+    Point obj3('a', "Северный коридор 5эт", loc5, {});
+    Point obj4('s', "Южная лестница 5эт", loc5, {});
+    Point obj5('s', "Северная лестница 5эт", loc5, {});
+
+    int loc6[3] = {6, 0, 0};
+    Point obj6('a', "Южный коридор 6эт", loc6, {});
+    Point obj7('a', "Главный коридор 6эт", loc6, {});
+    Point obj8('a', "Северный коридор 6эт", loc6, {});
+    Point obj9('s', "Южная лестница 6эт", loc6, {});
+    Point obj10('s', "Северная лестница 6эт", loc6, {});
+
+    int loc7[3] = {7, 0, 0};
+    Point obj11('a', "Южный коридор 7эт", loc7, {});
+    Point obj12('a', "Главный коридор 7эт", loc7, {});
+    Point obj13('a', "Северный коридор 7эт", loc7, {});
+    Point obj14('s', "Южная лестница 7эт", loc7, {});
+    Point obj15('s', "Северная лестница 7эт", loc7, {});
+    //5
+    createConnection("Южный коридор 5эт", "Главный коридор 5эт", 1);
+    createConnection("Северный коридор 5эт", "Главный коридор 5эт", 1);
+
+    createConnection("Южный коридор 5эт", "Южная лестница 5эт", 1);
+    createConnection("Северный коридор 5эт", "Северная лестница 5эт", 1);
+
+    createConnection("Южная лестница 5эт", "Главный коридор 5эт", 1);
+    createConnection("Северная лестница 5эт", "Главный коридор 5эт", 1);
+
+    //6
+    createConnection("Южный коридор 6эт", "Главный коридор 6эт", 1);
+    createConnection("Северный коридор 6эт", "Главный коридор 6эт", 1);
+
+    createConnection("Южный коридор 6эт", "Южная лестница 6эт", 1);
+    createConnection("Северный коридор 6эт", "Северная лестница 6эт", 1);
+
+    createConnection("Южная лестница 6эт", "Главный коридор 6эт", 1);
+    createConnection("Северная лестница 6эт", "Главный коридор 6эт", 1);
+
+    //7
+    createConnection("Южный коридор 7эт", "Главный коридор 7эт", 1);
+    createConnection("Северный коридор 7эт", "Главный коридор 7эт", 1);
+
+    createConnection("Южный коридор 7эт", "Южная лестница 7эт", 1);
+    createConnection("Северный коридор 7эт", "Северная лестница 7эт", 1);
+
+    createConnection("Южная лестница 7эт", "Главный коридор 7эт", 1);
+    createConnection("Северная лестница 7эт", "Главный коридор 7эт", 1);
+
+    //stairs
+    createConnection("Южная лестница 5эт", "Южная лестница 6эт", 1);
+    createConnection("Южная лестница 5эт", "Южная лестница 7эт", 1);
+    createConnection("Южная лестница 6эт", "Южная лестница 7эт", 1);
+
+    createConnection("Северная лестница 5эт", "Северная лестница 6эт", 1);
+    createConnection("Северная лестница 5эт", "Северная лестница 7эт", 1);
+    createConnection("Северная лестница 6эт", "Северная лестница 7эт", 1);
+
+
+
+    
     GtkBuilder *builder;
     GtkWidget *window;
     AppWidgets widgets;
