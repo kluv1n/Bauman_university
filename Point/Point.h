@@ -34,3 +34,4 @@ public:
 
 void createConnection(const std::string& name1, const std::string& name2, int distance);
 void printShortestPath(const std::string& name1, const std::string& name2);
+std::string defRoom(std::string roomName);

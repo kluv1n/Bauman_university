@@ -115,3 +115,19 @@ void printShortestPath(const std::string& name1, const std::string& name2) {
         std::cout << "Object not found: " << name1 << std::endl;
     }
 }
+std::string defRoom(std::string roomName){
+
+    if(!std::isdigit(roomName[0])) return roomName;
+
+    std::string answerPart1, answerPart2;
+    int room=std::stoi(roomName);
+
+
+    if (room%100 <=10) answerPart1= "Южный коридор";
+    if (room%100 >10 and room%100 <=39) answerPart1= "Главный коридор";
+    if (room%100 >=40) answerPart1= "Северный коридор";
+
+    answerPart2= std::to_string(room/100)+"эт";
+
+    return answerPart1+" "+answerPart2;
+}
