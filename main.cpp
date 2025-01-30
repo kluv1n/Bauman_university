@@ -1,6 +1,5 @@
 #include <gtk/gtk.h>
 #include "Point/Point.h"
-// #include "creationDB.cpp"
 #include <string>
 #include <map>
 #include <iostream>
